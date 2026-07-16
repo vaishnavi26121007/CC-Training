@@ -14,5 +14,3 @@ int main()
     else
     printf("no vote and not an eligible candidate");
  }
-
-
