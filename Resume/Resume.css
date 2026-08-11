@@ -1,0 +1,210 @@
+/* ========================================
+   RESUME - CSS
+   ======================================== */
+
+/* Page */
+body {
+    margin: 0;
+    padding: 35px 55px;
+    background-color: white;
+    color:rgb(18, 13, 82);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   MAIN RESUME TITLE
+   ======================================== */
+
+h1 {
+    text-align: left;
+    color:#00796B;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin: 5px 0 20px 0;
+}
+
+
+/* ========================================
+   NAME
+   ======================================== */
+
+h2 {
+    color:#00796B;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #17365d;
+    padding-bottom: 4px;
+}
+
+
+/* ========================================
+   CONTACT DETAILS
+   ======================================== */
+
+p {
+    margin: 6px 0 12px 0;
+}
+
+p b {
+    color: #2c2c2c;
+}
+
+
+/* Links */
+
+a {
+    color: #17365d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   PROFILE PHOTO
+   ======================================== */
+
+img {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border: 2px solid #17365d;
+    padding: 3px;
+}
+
+
+/* ========================================
+   HORIZONTAL LINE
+   ======================================== */
+
+hr {
+    border: 0;
+    border-top: 1.5px solid #17365d;
+    margin: 15px 0;
+}
+
+
+/* ========================================
+   EDUCATION TABLE
+   ======================================== */
+
+table {
+    border-collapse: collapse;
+}
+
+table[border="1"] {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+table[border="1"] th {
+    background-color:#00796B;
+    color: white;
+    font-weight: bold;
+    padding: 9px;
+    text-align: center;
+    border: 1px solid #17365d;
+}
+
+table[border="1"] td {
+    padding: 8px;
+    border: 1px solid #999999;
+    text-align: left;
+}
+
+table[border="1"] tr:nth-child(even) {
+    background-color: #f4f7fa;
+}
+
+
+/* ========================================
+   SKILLS & CERTIFICATIONS
+   ======================================== */
+
+ul {
+    margin-top: 5px;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+
+/* ========================================
+   PERSONAL DETAILS
+   ======================================== */
+
+h2 + p {
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   DATE / PLACE / SIGNATURE
+   ======================================== */
+
+body > table:last-of-type {
+    width: 100%;
+    margin-top: 10px;
+}
+
+body > table:last-of-type td {
+    vertical-align: bottom;
+}
+
+
+/* Signature */
+
+body > table:last-of-type td:last-child {
+    text-align: right;
+}
+
+
+/* ========================================
+   A4 PAGE
+   ======================================== */
+
+@page {
+    size: A4;
+    margin: 12mm;
+}
+
+
+/* ========================================
+   PRINT / SAVE AS PDF
+   ======================================== */
+
+@media print {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    a {
+        color: #5B2C6F;
+        text-decoration: none;
+    }
+
+    h1,
+    h2 {
+        color: #17365d;
+    }
+
+    table[border="1"] tr:nth-child(even) {
+        background-color: white;
+    }
+
+    hr {
+        border-top: 1px solid #333333;
+    }
+}
