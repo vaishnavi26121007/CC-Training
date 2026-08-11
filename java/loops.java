@@ -4,7 +4,7 @@ public class loops
 {
     static int min(int a,int b,int c,int d)
     {
-        int e= a<b?a:b;
+        int e=a<b?a:b;
         int f=c<d?c:d;
         return e<f?e:f;
     }
@@ -17,6 +17,7 @@ public class loops
 	  {
 	      ans=min(i,j,(2*n-2)-i,(2*n-2)-j);
 	      System.out.print(n-ans);
+          sc.close();
 	  }
-	  }
+	}
 }
